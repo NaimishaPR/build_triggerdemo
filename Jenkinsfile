@@ -1,12 +1,9 @@
-pipeline{
+pipeline {
     agent any
-    triggers {
-      pollSCM '* * * * *'
-    }
-    stages{
-        stage("SCM"){
-            steps{
-               echo "job ran.....again"
+    stages {
+        stage("SCM") {
+            steps {
+                echo "Job ran.."
             }
         }
     }
